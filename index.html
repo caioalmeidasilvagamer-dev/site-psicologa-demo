@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- EDITAR: título da página (nome do profissional) -->
+  <title>Dra. Marina Oliveira — Psicóloga Clínica | Atendimento Presencial e Online</title>
+
+  <!-- EDITAR: meta description -->
+  <meta name="description" content="Psicóloga clínica com abordagem em Terapia Cognitivo-Comportamental. Atendimento presencial e online para ansiedade, estresse, relacionamentos e autoconhecimento. Agende sua conversa inicial.">
+  <meta name="author" content="Dra. Marina Oliveira">
+
+  <!-- Open Graph (redes sociais) -->
+  <!-- EDITAR: dados Open Graph -->
+  <meta property="og:title" content="Dra. Marina Oliveira — Psicóloga Clínica">
+  <meta property="og:description" content="Cuidar da saúde emocional é um ato de coragem. Agende sua conversa inicial.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/foto-perfil.jpg">
+
+  <!-- Favicon -->
+  <!-- EDITAR: favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Google Fonts — Fraunces + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       SEÇÃO: Header (fixo)
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+
+      <!-- EDITAR: nome do profissional e CRP -->
+      <a href="#" class="header-logo">
+        <span class="nome">Dra. Marina Oliveira</span>
+        <span class="credencial">Psicóloga — CRP 06/123456</span>
+      </a>
+
+      <nav class="header-nav" id="header-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#agendamento">Contato</a>
+
+        <!-- EDITAR: link de agendamento / WhatsApp -->
+        <a href="#agendamento" class="btn btn-primario header-cta">
+          <i data-lucide="calendar-heart"></i>
+          Agendar conversa
+        </a>
+      </nav>
+
+      <!-- Botão hamburger (mobile) -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Overlay do menu mobile -->
+  <div class="menu-overlay" id="menu-overlay"></div>
+
+
+  <!-- ============================================================
+       SEÇÃO: Hero
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="container">
+
+      <div class="hero-content animar">
+        <div class="hero-badge">
+          <i data-lucide="heart-handshake"></i>
+          <!-- EDITAR: badge do hero -->
+          Atendimento presencial e online
+        </div>
+
+        <!-- EDITAR: título principal do hero -->
+        <h1>Cuidar de si é um ato de <span>coragem</span>, não de fraqueza.</h1>
+
+        <!-- EDITAR: subtítulo do hero -->
+        <p class="hero-subtitulo">
+          A terapia é um espaço seguro para você se ouvir, entender suas emoções e construir, no seu ritmo, uma relação mais saudável consigo e com o mundo ao redor.
+        </p>
+
+        <div class="hero-ctas">
+          <!-- EDITAR: link do CTA principal (WhatsApp ou agendamento) -->
+          <a href="#agendamento" class="btn btn-primario">
+            <i data-lucide="calendar-heart"></i>
+            Agendar conversa inicial
+          </a>
+          <a href="#sobre" class="btn btn-secundario">
+            <i data-lucide="user"></i>
+            Conheça meu trabalho
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-imagem animar animar-delay-2">
+        <!-- EDITAR: foto de perfil (placeholder) -->
+        <!-- placeholder: foto profissional acolhedora -->
+        <img src="assets/img/foto-perfil.jpg" alt="Dra. Marina Oliveira — Psicóloga Clínica" loading="eager">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SEÇÃO: Sobre o Profissional
+       ============================================================ -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+
+      <div class="sobre-imagem animar">
+        <!-- EDITAR: foto de perfil (segunda foto, pode ser a mesma) -->
+        <!-- placeholder: foto profissional no consultório -->
+        <img src="assets/img/foto-perfil.jpg" alt="Sobre Dra. Marina Oliveira">
+        <div class="decoracao"></div>
+      </div>
+
+      <div class="sobre-conteudo animar animar-delay-2">
+        <!-- EDITAR: nome do profissional -->
+        <h2>Olá, eu sou a Marina</h2>
+
+        <!-- EDITAR: CRP -->
+        <span class="credencial-sobre">Psicóloga Clínica — CRP 06/123456</span>
+
+        <!-- EDITAR: bio do profissional -->
+        <p>
+          Sou psicóloga clínica formada pela Universidade de São Paulo (USP), com formação complementar em Terapia Cognitivo-Comportamental (TCC) pelo Instituto de Psiquiatria do Hospital das Clínicas.
+        </p>
+        <p>
+          Acredito que a terapia é um espaço de acolhimento e descoberta, onde cada pessoa pode aprender a lidar com seus desafios emocionais de forma mais leve e consciente. Minha abordagem é prática, baseada em evidências científicas e, acima de tudo, humana.
+        </p>
+
+        <!-- EDITAR: motivação pessoal -->
+        <p>
+          Escolhi a psicologia porque acredito no potencial de cada pessoa para construir uma vida com mais sentido e equilíbrio — e me sinto privilegiada por poder caminhar ao lado de quem busca isso.
+        </p>
+
+        <!-- EDITAR: informações profissionais -->
+        <div class="sobre-info">
+          <div class="sobre-info-item">
+            <i data-lucide="graduation-cap"></i>
+            <span>Formada pela USP</span>
+          </div>
+          <div class="sobre-info-item">
+            <i data-lucide="brain"></i>
+            <span>Abordagem em TCC</span>
+          </div>
+          <div class="sobre-info-item">
+            <i data-lucide="monitor"></i>
+            <span>Atendimento online</span>
+          </div>
+          <div class="sobre-info-item">
+            <i data-lucide="map-pin"></i>
+            <span>Presencial em SP</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SEÇÃO: Para Quem é a Terapia
+       ============================================================ -->
+  <section class="para-quem" id="para-quem">
+    <div class="container">
+
+      <div class="secao-titulo animar">
+        <h2>A terapia pode ajudar você se...</h2>
+        <p>Estes são alguns dos motivos mais comuns que levam pessoas a buscar acompanhamento psicológico. Identificou-se com algum deles?</p>
+      </div>
+
+      <!-- EDITAR: situações / públicos-alvo -->
+      <div class="cards-grid">
+
+        <div class="card animar animar-delay-1">
+          <div class="card-icone">
+            <i data-lucide="cloud-rain"></i>
+          </div>
+          <h3>Ansiedade e preocupação constante</h3>
+          <p>Sensação de inquietação que não passa, pensamentos acelerados, dificuldade para relaxar ou dormir, e a impressão de que algo ruim pode acontecer a qualquer momento.</p>
+        </div>
+
+        <div class="card animar animar-delay-2">
+          <div class="card-icone">
+            <i data-lucide="battery-low"></i>
+          </div>
+          <h3>Sobrecarga e esgotamento</h3>
+          <p>Sensação de que as demandas do dia a dia estão além do que você consegue lidar, cansaço emocional e físico que não melhora com descanso.</p>
+        </div>
+
+        <div class="card animar animar-delay-3">
+          <div class="card-icone">
+            <i data-lucide="heart-crack"></i>
+          </div>
+          <h3>Dificuldades nos relacionamentos</h3>
+          <p>Conflitos recorrentes, dificuldade em estabelecer limites, padrões que se repetem nos vínculos afetivos, sensação de solidão mesmo acompanhado.</p>
+        </div>
+
+        <div class="card animar animar-delay-1">
+          <div class="card-icone">
+            <i data-lucide="cloud-off"></i>
+          </div>
+          <h3>Luto e perdas</h3>
+          <p>Processar a perda de alguém importante, de um relacionamento, de um emprego, ou de uma fase da vida. Cada luto tem seu tempo e seu processo.</p>
+        </div>
+
+        <div class="card animar animar-delay-2">
+          <div class="card-icone">
+            <i data-lucide="compass"></i>
+          </div>
+          <h3>Autoconhecimento e propósito</h3>
+          <p>Vontade de se entender melhor, questionar padrões de comportamento, encontrar mais clareza sobre escolhas de vida e direção pessoal.</p>
+        </div>
+
+        <div class="card animar animar-delay-3">
+          <div class="card-icone">
+            <i data-lucide="shield-alert"></i>
+          </div>
+          <h3>Baixa autoestima e insegurança</h3>
+          <p>Dificuldade em se valorizar, medo constante de julgamento, autocrítica excessiva e sensação de não ser suficiente.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SEÇÃO: Como Funciona o Processo
+       ============================================================ -->
+  <section class="como-funciona" id="como-funciona">
+    <div class="container">
+
+      <div class="secao-titulo animar">
+        <h2>Como funciona o processo terapêutico</h2>
+        <p>Entenda o que esperar de cada etapa, do primeiro contato às sessões regulares.</p>
+      </div>
+
+      <!-- EDITAR: etapas do processo -->
+      <div class="steps">
+
+        <div class="step animar animar-delay-1">
+          <div class="step-numero">1</div>
+          <h3>Primeiro contato</h3>
+          <p>Você entra em contato por WhatsApp ou pelo formulário. Conversamos brevemente para entender sua demanda e agendar a primeira sessão.</p>
+        </div>
+
+        <div class="step animar animar-delay-2">
+          <div class="step-numero">2</div>
+          <h3>Sessão inicial</h3>
+          <p>Na primeira sessão, nos conhecemos. Você fala sobre o que te trouxe e, juntos, definimos se faz sentido seguirmos com o processo terapêutico.</p>
+        </div>
+
+        <div class="step animar animar-delay-3">
+          <div class="step-numero">3</div>
+          <h3>Sessões regulares</h3>
+          <p>As sessões acontecem semanalmente, com 50 minutos de duração, presencialmente ou por videochamada — o que for mais confortável para você.</p>
+        </div>
+
+        <div class="step animar animar-delay-4">
+          <div class="step-numero">4</div>
+          <h3>Seu processo, seu ritmo</h3>
+          <p>O tempo de terapia varia para cada pessoa. Respeitamos o seu ritmo, e tudo o que for compartilhado é protegido por sigilo profissional absoluto.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SEÇÃO: Abordagem Terapêutica
+       ============================================================ -->
+  <section class="abordagem" id="abordagem">
+    <div class="container">
+
+      <div class="abordagem-conteudo">
+
+        <div class="abordagem-texto animar">
+          <h2>Minha abordagem de trabalho</h2>
+          <!-- EDITAR: abordagem terapêutica -->
+          <span class="abordagem-subtitulo">Terapia Cognitivo-Comportamental (TCC)</span>
+
+          <p>
+            A TCC é uma abordagem da psicologia baseada em evidências científicas. Ela parte do princípio de que nossos pensamentos influenciam diretamente nossas emoções e comportamentos — e que, ao compreender esses padrões, podemos transformá-los de forma prática e consciente.
+          </p>
+          <p>
+            Na prática, isso significa que em nossas sessões vamos identificar pensamentos e crenças que causam sofrimento, entender de onde vêm e construir, juntos, formas mais saudáveis e realistas de lidar com os desafios do dia a dia.
+          </p>
+          <p>
+            Não se trata de "pensar positivo" ou negar a realidade. É sobre ampliar sua capacidade de entender o que sente e escolher como agir, em vez de reagir no automático.
+          </p>
+
+          <ul class="abordagem-lista">
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              Baseada em pesquisas científicas
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              Prática e orientada para resultados concretos
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              Trabalha pensamentos, emoções e comportamentos
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              Adaptada ao seu ritmo e às suas necessidades
+            </li>
+          </ul>
+        </div>
+
+        <div class="abordagem-visual animar animar-delay-2">
+          <blockquote>
+            "A forma como pensamos afeta como nos sentimos — e como nos sentimos influencia como agimos."
+          </blockquote>
+          <cite>— Princípio fundamental da TCC</cite>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SEÇÃO: Depoimentos (anonimizados, éticos)
+       ============================================================ -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+
+      <div class="secao-titulo animar">
+        <h2>O que dizem sobre o processo</h2>
+        <p>Depoimentos reais de pacientes em acompanhamento. Nomes e detalhes foram preservados por sigilo profissional.</p>
+      </div>
+
+      <!-- EDITAR: depoimentos (manter anonimizados) -->
+      <div class="depoimentos-grid">
+
+        <div class="depoimento-card animar animar-delay-1">
+          <div class="depoimento-aspas">"</div>
+          <p>Eu tinha muito medo de fazer terapia. Achava que ia ser julgada, que não iam me entender. Mas desde a primeira sessão me senti acolhida. Pela primeira vez, sinto que tenho um espaço que é só meu para falar sem filtro.</p>
+          <div class="depoimento-autor">
+            <div class="depoimento-avatar">C.S.</div>
+            <div class="depoimento-info">
+              <span class="nome-depoimento">C. S.</span>
+              <span class="tempo-depoimento">Paciente há 8 meses</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card animar animar-delay-2">
+          <div class="depoimento-aspas">"</div>
+          <p>A terapia me ajudou a entender que eu não precisava ter todas as respostas sozinho. Aprendi a reconhecer meus padrões de pensamento e, aos poucos, estou conseguindo lidar melhor com a ansiedade no trabalho.</p>
+          <div class="depoimento-autor">
+            <div class="depoimento-avatar">R.M.</div>
+            <div class="depoimento-info">
+              <span class="nome-depoimento">R. M.</span>
+              <span class="tempo-depoimento">Paciente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card animar animar-delay-3">
+          <div class="depoimento-aspas">"</div>
+          <p>Comecei a terapia online sem muita expectativa, mas funcionou muito bem pra mim. A Dra. Marina consegue criar um ambiente de confiança mesmo à distância. Me sinto mais leve e mais presente na minha própria vida.</p>
+          <div class="depoimento-autor">
+            <div class="depoimento-avatar">A.L.</div>
+            <div class="depoimento-info">
+              <span class="nome-depoimento">A. L.</span>
+              <span class="tempo-depoimento">Paciente há 6 meses</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SEÇÃO: FAQ (Perguntas Frequentes)
+       ============================================================ -->
+  <section class="faq" id="faq">
+    <div class="container">
+
+      <div class="secao-titulo animar">
+        <h2>Perguntas frequentes</h2>
+        <p>Tire suas dúvidas sobre o processo terapêutico, agendamento e funcionamento das sessões.</p>
+      </div>
+
+      <!-- EDITAR: perguntas e respostas -->
+      <div class="faq-lista">
+
+        <div class="faq-item animar animar-delay-1">
+          <button class="faq-pergunta" aria-expanded="false">
+            <h3>A terapia tem sigilo? Tudo que eu falar é confidencial?</h3>
+            <i data-lucide="chevron-down" class="faq-icone"></i>
+          </button>
+          <div class="faq-resposta">
+            <div class="faq-resposta-inner">
+              <p>Sim, absolutamente. O sigilo profissional é um direito seu, garantido pelo Código de Ética do Psicólogo (Resolução CFP 010/2005). Tudo o que for compartilhado em sessão é confidencial. As únicas exceções previstas em lei são situações que envolvam risco iminente à vida do paciente ou de terceiros.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item animar animar-delay-1">
+          <button class="faq-pergunta" aria-expanded="false">
+            <h3>Você atende por convênio ou é particular?</h3>
+            <i data-lucide="chevron-down" class="faq-icone"></i>
+          </button>
+          <div class="faq-resposta">
+            <div class="faq-resposta-inner">
+              <!-- EDITAR: informação sobre convênio/particular -->
+              <p>Atualmente, o atendimento é particular. Os valores e formas de pagamento são informados no primeiro contato. Emito recibo para reembolso em planos de saúde que oferecem essa possibilidade — consulte seu convênio para verificar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item animar animar-delay-2">
+          <button class="faq-pergunta" aria-expanded="false">
+            <h3>Como faço para agendar uma sessão?</h3>
+            <i data-lucide="chevron-down" class="faq-icone"></i>
+          </button>
+          <div class="faq-resposta">
+            <div class="faq-resposta-inner">
+              <!-- EDITAR: instruções de agendamento -->
+              <p>Você pode entrar em contato pelo WhatsApp ou preencher o formulário no final desta página. Responderei em até 24 horas úteis para combinarmos o melhor horário para sua primeira sessão.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item animar animar-delay-2">
+          <button class="faq-pergunta" aria-expanded="false">
+            <h3>A terapia online funciona mesmo? É tão eficaz quanto presencial?</h3>
+            <i data-lucide="chevron-down" class="faq-icone"></i>
+          </button>
+          <div class="faq-resposta">
+            <div class="faq-resposta-inner">
+              <p>Sim. Diversas pesquisas científicas demonstram que a terapia online tem eficácia equivalente à presencial para a maioria das demandas clínicas. O Conselho Federal de Psicologia regulamenta e autoriza o atendimento online. O importante é que você se sinta confortável com a modalidade escolhida — e isso podemos conversar juntos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item animar animar-delay-3">
+          <button class="faq-pergunta" aria-expanded="false">
+            <h3>Preciso cancelar ou remarcar uma sessão. Como funciona?</h3>
+            <i data-lucide="chevron-down" class="faq-icone"></i>
+          </button>
+          <div class="faq-resposta">
+            <div class="faq-resposta-inner">
+              <!-- EDITAR: política de cancelamento -->
+              <p>Peço que cancelamentos ou remarcações sejam feitos com pelo menos 24 horas de antecedência. Imprevistos acontecem, e faremos o possível para encontrar um novo horário. Sessões canceladas sem aviso prévio podem ser cobradas integralmente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item animar animar-delay-3">
+          <button class="faq-pergunta" aria-expanded="false">
+            <h3>O que devo levar ou preparar para a primeira sessão?</h3>
+            <i data-lucide="chevron-down" class="faq-icone"></i>
+          </button>
+          <div class="faq-resposta">
+            <div class="faq-resposta-inner">
+              <p>Não precisa preparar nada específico. A primeira sessão é uma conversa para nos conhecermos — você pode falar livremente sobre o que te trouxe, o que sente, ou até mesmo que não sabe por onde começar (e tudo bem). Se for online, basta ter um lugar tranquilo e com boa conexão de internet.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SEÇÃO: CTA Final + Formulário de Agendamento
+       ============================================================ -->
+  <section class="agendamento" id="agendamento">
+    <div class="container">
+
+      <div class="animar">
+        <!-- EDITAR: título e texto do CTA final -->
+        <h2>Pronto(a) para dar o primeiro passo?</h2>
+        <p>
+          Agendar uma conversa inicial não é um compromisso definitivo — é apenas o começo de uma possibilidade. Ficarei feliz em te ouvir.
+        </p>
+
+        <div class="agendamento-opcoes">
+          <!-- EDITAR: link do WhatsApp (número do profissional) -->
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20conversa%20inicial." class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <i data-lucide="message-circle"></i>
+            Conversar pelo WhatsApp
+          </a>
+          <a href="#form-contato" class="btn btn-primario">
+            <i data-lucide="mail"></i>
+            Enviar mensagem
+          </a>
+        </div>
+      </div>
+
+      <!-- Formulário de contato -->
+      <form class="form-agendamento animar animar-delay-2" id="form-contato">
+        <h3>Ou envie uma mensagem</h3>
+
+        <div class="form-grupo">
+          <input type="text" id="form-nome" placeholder="Seu nome" required autocomplete="name">
+        </div>
+
+        <div class="form-grupo">
+          <!-- EDITAR: máscara de telefone conforme país -->
+          <input type="tel" id="form-telefone" placeholder="(00) 00000-0000" required autocomplete="tel">
+        </div>
+
+        <div class="form-grupo">
+          <select id="form-modalidade">
+            <option value="" disabled selected>Modalidade de preferência</option>
+            <option value="presencial">Presencial</option>
+            <option value="online">Online</option>
+            <option value="sem-preferencia">Sem preferência</option>
+          </select>
+        </div>
+
+        <div class="form-grupo">
+          <textarea id="form-mensagem" placeholder="Conte brevemente o que te trouxe aqui (opcional)" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primario">
+          <i data-lucide="send"></i>
+          Enviar mensagem
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SEÇÃO: Rodapé
+       ============================================================ -->
+  <footer class="footer" id="contato">
+    <div class="container">
+
+      <div class="footer-conteudo">
+
+        <div class="footer-logo">
+          <!-- EDITAR: nome do profissional e CRP -->
+          <span class="nome">Dra. Marina Oliveira</span>
+          <span class="credencial">Psicóloga — CRP 06/123456</span>
+          <p>Atendimento psicológico clínico com abordagem em Terapia Cognitivo-Comportamental. Presencial em São Paulo e online para todo o Brasil.</p>
+        </div>
+
+        <div class="footer-navegacao">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#para-quem">Para quem é</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#agendamento">Agendamento</a>
+          </div>
+        </div>
+
+        <div class="footer-contato">
+          <h4>Contato</h4>
+          <div class="footer-links">
+            <!-- EDITAR: e-mail do profissional -->
+            <a href="mailto:contato@marinaoliveira.com.br">contato@marinaoliveira.com.br</a>
+            <!-- EDITAR: WhatsApp do profissional -->
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a>
+            <!-- EDITAR: localização -->
+            <a href="#">São Paulo — SP</a>
+          </div>
+
+          <!-- EDITAR: redes sociais -->
+          <div class="footer-redes">
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <!-- EDITAR: ano e nome no copyright -->
+        <p>&copy; 2025 Dra. Marina Oliveira. Todos os direitos reservados.</p>
+        <!-- EDITAR: link para política de privacidade -->
+        <a href="#">Política de Privacidade (LGPD)</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
