@@ -1,13 +1,13 @@
 /* ============================================================
-   Landing Page — Psicólogo(a) Clínico(a) | Template Demo
-   JavaScript — Interações e funcionalidades
+   Landing Page — Psicologia Clínica | Premium Template
+   JavaScript — Interações, Acessibilidade & Funcionalidades
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   /* ----------------------------------------------------------
-     MENU MOBILE — Toggle e overlay
+     MENU MOBILE — Toggle com Acessibilidade (ARIA)
      ---------------------------------------------------------- */
   const menuToggle = document.querySelector('.menu-toggle');
   const headerNav = document.querySelector('.header-nav');
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function abrirMenu() {
     menuToggle.classList.add('active');
+    menuToggle.setAttribute('aria-expanded', 'true');
     headerNav.classList.add('aberto');
     menuOverlay.classList.add('ativo');
     body.style.overflow = 'hidden';
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function fecharMenu() {
     menuToggle.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
     headerNav.classList.remove('aberto');
     menuOverlay.classList.remove('ativo');
     body.style.overflow = '';
@@ -30,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (menuToggle) {
     menuToggle.addEventListener('click', () => {
-      if (headerNav.classList.contains('aberto')) {
+      const estaAberto = menuToggle.getAttribute('aria-expanded') === 'true';
+      if (estaAberto) {
         fecharMenu();
       } else {
         abrirMenu();
@@ -42,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuOverlay.addEventListener('click', fecharMenu);
   }
 
-  // Fechar menu ao clicar em um link da navegação
+  // Fechar menu mobile ao clicar em links internos
   const navLinks = document.querySelectorAll('.header-nav a');
   navLinks.forEach(link => {
     link.addEventListener('click', fecharMenu);
@@ -50,29 +53,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ----------------------------------------------------------
-     HEADER — Efeito ao rolar (scroll)
+     HEADER — Efeito de Scroll
      ---------------------------------------------------------- */
   const header = document.querySelector('.header');
-  let ultimoScroll = 0;
 
   function atualizarHeader() {
-    const scrollAtual = window.scrollY;
-
-    if (scrollAtual > 60) {
+    if (window.scrollY > 40) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
-
-    ultimoScroll = scrollAtual;
   }
 
   window.addEventListener('scroll', atualizarHeader, { passive: true });
-  atualizarHeader(); // Executar na carga inicial
+  atualizarHeader(); // Execução inicial
 
 
   /* ----------------------------------------------------------
-     SCROLL SUAVE — Para âncoras internas
+     SCROLL SUAVE — Navegação por Âncoras
      ---------------------------------------------------------- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -83,38 +81,52 @@ document.addEventListener('DOMContentLoaded', () => {
       if (targetElement) {
         e.preventDefault();
         const headerHeight = header.offsetHeight;
-        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight - 10;
 
         window.scrollTo({
           top: targetPosition,
           behavior: 'smooth'
         });
+
+        // Mover foco para o elemento de destino (melhora acessibilidade de teclado)
+        targetElement.setAttribute('tabindex', '-1');
+        targetElement.focus({ preventScroll: true });
       }
     });
   });
 
 
   /* ----------------------------------------------------------
-     FAQ — Accordion
+     FAQ — Accordion Acessível (Toggle ARIA-Expanded)
      ---------------------------------------------------------- */
   const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
     const pergunta = item.querySelector('.faq-pergunta');
+    const resposta = item.querySelector('.faq-resposta');
 
-    pergunta.addEventListener('click', () => {
-      const estaAtivo = item.classList.contains('ativo');
+    if (pergunta && resposta) {
+      pergunta.addEventListener('click', () => {
+        const estaAtivo = item.classList.contains('ativo');
 
-      // Fechar todos os outros
-      faqItems.forEach(outro => {
-        if (outro !== item) {
-          outro.classList.remove('ativo');
+        // Fechar todos os outros accordions
+        faqItems.forEach(outro => {
+          if (outro !== item) {
+            outro.classList.remove('ativo');
+            outro.querySelector('.faq-pergunta').setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Toggle do accordion atual
+        if (estaAtivo) {
+          item.classList.remove('ativo');
+          pergunta.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('ativo');
+          pergunta.setAttribute('aria-expanded', 'true');
         }
       });
-
-      // Toggle do item clicado
-      item.classList.toggle('ativo', !estaAtivo);
-    });
+    }
   });
 
 
@@ -135,20 +147,20 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         root: null,
-        rootMargin: '0px 0px -80px 0px',
-        threshold: 0.1
+        rootMargin: '0px 0px -60px 0px',
+        threshold: 0.05
       }
     );
 
     elementosAnimar.forEach(el => observer.observe(el));
   } else {
-    // Fallback: mostrar todos os elementos se o navegador não suportar
+    // Fallback para navegadores legados
     elementosAnimar.forEach(el => el.classList.add('visivel'));
   }
 
 
   /* ----------------------------------------------------------
-     FORMULÁRIO — Validação básica
+     FORMULÁRIO — Validação Acessível (CRO)
      ---------------------------------------------------------- */
   const form = document.querySelector('.form-agendamento');
 
@@ -160,54 +172,59 @@ document.addEventListener('DOMContentLoaded', () => {
       const telefone = form.querySelector('#form-telefone');
       let valido = true;
 
-      // Reset estilos de erro
-      form.querySelectorAll('input, textarea, select').forEach(input => {
-        input.style.borderColor = 'rgba(255, 255, 255, 0.25)';
+      // Reset de estilos de validação
+      form.querySelectorAll('input, select, textarea').forEach(input => {
+        input.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+        input.removeAttribute('aria-invalid');
       });
 
-      // Validar nome
+      // Validar Nome (mínimo 3 caracteres)
       if (nome && nome.value.trim().length < 3) {
-        nome.style.borderColor = '#e74c3c';
+        nome.style.borderColor = '#ff4d4d';
+        nome.setAttribute('aria-invalid', 'true');
         valido = false;
       }
 
-      // Validar telefone
-      if (telefone && telefone.value.trim().length < 10) {
-        telefone.style.borderColor = '#e74c3c';
+      // Validar Telefone (mínimo 10 caracteres numéricos após máscara)
+      const numDigitos = telefone ? telefone.value.replace(/\D/g, '').length : 0;
+      if (telefone && numDigitos < 10) {
+        telefone.style.borderColor = '#ff4d4d';
+        telefone.setAttribute('aria-invalid', 'true');
         valido = false;
       }
 
       if (valido) {
-        // Simular envio (demo)
         const btnSubmit = form.querySelector('button[type="submit"]');
         const textoOriginal = btnSubmit.innerHTML;
 
-        btnSubmit.innerHTML = '<i data-lucide="check-circle"></i> Mensagem enviada!';
-        btnSubmit.style.backgroundColor = '#25D366';
+        btnSubmit.innerHTML = '<i data-lucide="check" aria-hidden="true"></i><span>Mensagem enviada com sucesso!</span>';
+        btnSubmit.style.backgroundColor = '#25d366';
+        btnSubmit.style.borderColor = '#25d366';
         btnSubmit.disabled = true;
 
-        // Reinicializar ícones Lucide no botão
         if (window.lucide) {
           lucide.createIcons();
         }
 
+        // Simular requisição assíncrona
         setTimeout(() => {
           form.reset();
           btnSubmit.innerHTML = textoOriginal;
           btnSubmit.style.backgroundColor = '';
+          btnSubmit.style.borderColor = '';
           btnSubmit.disabled = false;
 
           if (window.lucide) {
             lucide.createIcons();
           }
-        }, 3000);
+        }, 3500);
       }
     });
   }
 
 
   /* ----------------------------------------------------------
-     MÁSCARA SIMPLES — Telefone
+     MÁSCARA DE TELEFONE (Brasil: (XX) XXXXX-XXXX ou (XX) XXXX-XXXX)
      ---------------------------------------------------------- */
   const inputTelefone = document.querySelector('#form-telefone');
 
@@ -233,13 +250,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ----------------------------------------------------------
-     NAVEGAÇÃO ATIVA — Highlight do item de menu ao rolar
+     ACTIVE NAVIGATION — Highlight Dinâmico na Navegação
      ---------------------------------------------------------- */
   const sections = document.querySelectorAll('section[id]');
   const navItems = document.querySelectorAll('.header-nav a[href^="#"]');
 
   function atualizarNavAtiva() {
-    const scrollPosition = window.scrollY + header.offsetHeight + 100;
+    const scrollPosition = window.scrollY + header.offsetHeight + 120;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
@@ -258,10 +275,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', atualizarNavAtiva, { passive: true });
+  atualizarNavAtiva();
 
 
   /* ----------------------------------------------------------
-     INICIALIZAR LUCIDE ICONS
+     INICIALIZAR LUCIDE ICONS (SE DISPONÍVEL NO ESCOPO GLOBAL)
      ---------------------------------------------------------- */
   if (window.lucide) {
     lucide.createIcons();
