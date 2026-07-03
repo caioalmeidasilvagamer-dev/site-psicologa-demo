@@ -112,6 +112,13 @@ def main():
     if "LINKEDIN" not in config or not config["LINKEDIN"].strip():
         config["LINKEDIN"] = f"https://www.linkedin.com/in/{slug_nome}"
         
+    if "MAPA_IFRAME" not in config or not str(config["MAPA_IFRAME"]).strip():
+        config["MAPA_IFRAME"] = """<div class="map-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="map-placeholder-icon" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span class="map-placeholder-label">Mapa de Localização</span>
+                <span class="map-placeholder-sub">O iframe interativo do Google Maps aparecerá aqui</span>
+              </div>"""
+        
     # Clean output directory
     if os.path.exists(output_dir):
         print(f"Diretorio de saida '{output_dir}' ja existe. Removendo versao anterior...")

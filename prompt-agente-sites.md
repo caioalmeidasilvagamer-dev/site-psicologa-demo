@@ -13,9 +13,10 @@ processo sempre que eu te passar dados de uma nova cliente:
 - `index.template.html` é o template fixo, com marcadores no formato
   `{{CAMPO}}`. NUNCA edite este arquivo, exceto se eu pedir
   explicitamente uma mudança de layout/estrutura.
-- `config.exemplo.json` mostra os 12 campos obrigatórios:
+- `config.exemplo.json` mostra os campos obrigatórios/adicionais:
   NOME, CRP, WHATSAPP, EMAIL, TELEFONE_FORMATADO, ENDERECO, HORARIOS,
-  CIDADE, CIDADE_ENDERECO, UNIVERSIDADE, INSTITUTO, ANOS_EXPERIENCIA
+  CIDADE, CIDADE_ENDERECO, UNIVERSIDADE, INSTITUTO, ANOS_EXPERIENCIA,
+  MAPA_IFRAME
 - `gerar_site.py` lê um config JSON e gera o site final numa pasta de saída,
   copiando css/js/assets junto.
 - `assets/img/` tem as fotos placeholder que precisam ser trocadas pelas
@@ -27,7 +28,7 @@ Vou te passar informações soltas (print de Instagram, texto de WhatsApp,
 áudio transcrito, etc.) contendo nome, CRP, telefone, cidade, formação,
 etc. Quando isso acontecer, você deve:
 
-1. **Extrair e organizar os dados** nos 12 campos do config, inferindo
+1. **Extrair e organizar os dados** nos 13 campos do config, inferindo
    com bom senso quando faltar algo explícito:
    - WHATSAPP: sempre no formato só números com DDI+DDD (ex: 5522988887777)
    - TELEFONE_FORMATADO: formato humano (ex: (22) 98888-7777)

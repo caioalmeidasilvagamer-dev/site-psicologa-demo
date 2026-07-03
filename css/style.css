@@ -1960,6 +1960,56 @@ section {
   text-align: center;
 }
 
+
+.agendamento-mapa {
+  margin-top: 24px;
+  width: 100%;
+  border-radius: var(--raio-borda);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.agendamento-mapa iframe {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.map-placeholder-icon {
+  color: rgba(255, 255, 255, 0.6);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.map-placeholder-label {
+  font-family: var(--fonte-texto);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.map-placeholder-sub {
+  font-family: var(--fonte-texto);
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+
 /* Form Container */
 .agendamento-formulario {
   background-color: rgba(255, 255, 255, 0.04);

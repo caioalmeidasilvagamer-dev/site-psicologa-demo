@@ -26,9 +26,13 @@ Você pode gerar uma nova landing page customizada rodando o script `gerar_site.
      "CIDADE_ENDERECO": "São Paulo (Av. Paulista)",
      "UNIVERSIDADE": "Universidade de São Paulo (USP)",
      "INSTITUTO": "Instituto de Psiquiatria HC-FMUSP",
-     "ANOS_EXPERIENCIA": "8"
+     "ANOS_EXPERIENCIA": "8",
+     "MAPA_IFRAME": "<iframe src=\"https://www.google.com/maps/embed?pb=...\" width=\"100%\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>"
    }
    ```
+   > **Como obter o link do Google Maps:** Acesse [maps.google.com](https://maps.google.com), pesquise o endereço do consultório, clique em **Compartilhar → Incorporar um mapa** e copie o código `<iframe>` gerado.
+   >
+   > Se o campo `MAPA_IFRAME` for omitido ou deixado vazio, o gerador insere automaticamente um placeholder visual no lugar.
 2. Execute o script gerador passando o arquivo de configuração e a pasta de destino:
    ```bash
    python gerar_site.py config.exemplo.json saida-marina

@@ -875,11 +875,16 @@
             </div>
 
             <div class="agendamento-opcoes">
-              <a href="https://wa.me/{{WHATSAPP}}?text=Olá!%20Gostaria%20de%20agendar%20uma%20conversa%20inicial%20com%20a%20Dra.%20a profissional." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp — abre em nova aba">
+              <a href="https://wa.me/{{WHATSAPP}}?text=Olá!%20Gostaria%20de%20agendar%20uma%20conversa%20inicial%20com%20{{NOME}}." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp — abre em nova aba">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.993L2 22l5.233-1.371a9.944 9.944 0 0 0 4.773 1.226h.004c5.505 0 9.99-4.478 9.99-9.985A9.988 9.988 0 0 0 12.012 2zm5.836 14.199c-.32.899-1.854 1.647-2.529 1.742-.618.086-1.428.163-4.225-.992-3.578-1.477-5.885-5.111-6.064-5.35-.178-.238-1.445-1.921-1.445-3.666 0-1.745.908-2.604 1.233-2.96.325-.356.711-.444.948-.444.237 0 .474.001.681.011.217.01.503-.039.789.631.306.721 1.047 2.549 1.139 2.738.093.189.155.408.028.658-.124.25-.187.408-.372.624-.187.217-.393.486-.563.652-.187.183-.383.383-.165.759.217.373.968 1.597 2.073 2.583 1.419 1.264 2.616 1.656 2.988 1.834.372.179.589.15.805-.099.217-.25.928-1.079 1.176-1.449.25-.371.495-.308.835-.183.342.126 2.167 1.021 2.54 1.206.372.185.619.277.712.435.093.159.093.921-.227 1.82z"/></svg>
                 <span>Agendar pelo WhatsApp</span>
               </a>
               <span class="agendamento-separador">ou preencha o formulário ao lado</span>
+            </div>
+            
+            <!-- Mapa de Localização -->
+            <div class="agendamento-mapa" aria-label="Mapa de localização do consultório">
+              {{MAPA_IFRAME}}
             </div>
           </div>
 
