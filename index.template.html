@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#607466">
+  <meta name="color-scheme" content="light">
+
+  <!-- ============================================================
+       SEO & METADADOS PRINCIPAIS
+       ============================================================ -->
+  <title>{{NOME}} — Psicóloga Clínica | Especialista em Ansiedade e Esgotamento em {{CIDADE}}</title>
+  <meta name="description" content="Psicoterapia presencial em {{CIDADE_ENDERECO}} e online para todo o Brasil. Abordagem TCC científica e acolhedora para ansiedade, burnout e autoconhecimento. CRP {{CRP}}. Agende sua conversa inicial.">
+  <meta name="author" content="{{NOME}}">
+  <meta name="keywords" content="psicóloga {{CIDADE}}, terapia cognitivo comportamental, ansiedade, burnout, esgotamento, psicóloga online, TCC, CRP, atendimento psicológico">
+  <link rel="canonical" href="{{DOMINIO}}/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{DOMINIO}}/">
+  <meta property="og:title" content="{{NOME}} — Psicóloga Clínica | TCC para Ansiedade e Burnout">
+  <meta property="og:description" content="Espaço terapêutico ético e acolhedor em {{CIDADE}} e online. Especializada em ansiedade, esgotamento e desenvolvimento pessoal com Terapia Cognitivo-Comportamental baseada em evidências.">
+  <meta property="og:image" content="{{DOMINIO}}/assets/img/foto-perfil.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="{{NOME}} — Psicóloga Clínica">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{DOMINIO}}/">
+  <meta name="twitter:title" content="{{NOME}} — Psicóloga Clínica">
+  <meta name="twitter:description" content="Psicoterapia individual focada em ansiedade e burnout. Atendimentos presencial ({{CIDADE}}) e online para todo o Brasil. CRP {{CRP}}.">
+  <meta name="twitter:image" content="{{DOMINIO}}/assets/img/foto-perfil.jpg">
+
+  <!-- Favicons & PWA -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- Google Fonts — Carregamento não-bloqueante com fallback noscript -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </noscript>
+
+  <!-- Preload imagem crítica do Hero (LCP) -->
+  <link rel="preload" as="image" href="assets/img/foto-perfil.jpg" fetchpriority="high">
+
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ============================================================
+       DADOS ESTRUTURADOS JSON-LD — SEO Semântico Completo
+       ============================================================ -->
+
+  <!-- Schema: Person + Psychologist -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Person", "MedicalBusiness"],
+    "@id": "{{DOMINIO}}/#pessoa",
+    "name": "{{NOME}}",
+    "jobTitle": "Psicóloga Clínica",
+    "description": "Psicóloga clínica especializada em Terapia Cognitivo-Comportamental (TCC) para tratamento de ansiedade, burnout e esgotamento emocional. Atende presencialmente em {{CIDADE}} e online para todo o Brasil.",
+    "image": "{{DOMINIO}}/assets/img/foto-perfil.jpg",
+    "url": "{{DOMINIO}}/",
+    "telephone": "+{{WHATSAPP}}",
+    "email": "{{EMAIL}}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ENDERECO}}",
+      "addressLocality": "{{CIDADE}}",
+      "addressRegion": "SP",
+      "postalCode": "01310-100",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.5615,
+      "longitude": -46.6560
+    },
+    "knowsAbout": ["Terapia Cognitivo-Comportamental", "Ansiedade", "Burnout", "Saúde Mental", "Psicoterapia"],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Registro Profissional",
+      "name": "CRP {{CRP}}",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Conselho Regional de Psicologia — 6ª Região"
+      }
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade de {{CIDADE}} (USP)"
+    },
+    "sameAs": [
+      "{{INSTAGRAM}}",
+      "{{LINKEDIN}}"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brasil"
+    }
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como funciona a primeira sessão de psicoterapia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A primeira sessão é um espaço de escuta mútua para compreender o que te levou a buscar ajuda. Entendemos seus desafios atuais, sua história de vida básica e definimos os primeiros objetivos do acompanhamento, sem compromissos definitivos de permanência."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual é a duração e frequência das sessões?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As sessões têm duração padrão de 50 minutos. A frequência inicial recomendada é semanal, o que viabiliza o desenvolvimento do vínculo terapêutico e a consistência das intervenções cognitivo-comportamentais."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como é realizado o pagamento e aceita convênio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os atendimentos são particulares. O pagamento pode ser feito por PIX ou transferência bancária. Não há atendimento direto por convênios, mas emitimos recibos e relatórios para que você solicite o reembolso integral ou parcial no seu plano de saúde."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A terapia online é realmente eficaz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Diversos estudos científicos internacionais demonstram que a terapia online tem eficácia idêntica à presencial para transtornos como ansiedade, depressão e estresse severo. É uma modalidade segura, prática e regulamentada pelo Conselho Federal de Psicologia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona a política de sigilo profissional?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O sigilo profissional é um dever ético inegociável do psicólogo, regulamentado pelo artigo 9º do Código de Ética do CFP. Todas as informações compartilhadas durante as consultas online ou presenciais são protegidas por sigilo absoluto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso reagendar ou cancelar uma sessão?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Solicitamos notificação prévia com no mínimo 24 horas de antecedência para realocação do horário. Desmarcações fora deste prazo estão sujeitas à taxa regular da sessão."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Lucide Icons — diferido para não bloquear renderização -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+
+  <!-- Pular para conteúdo principal (Acessibilidade WCAG 2.2) -->
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- ============================================================
+       BANNER LGPD — Cookies
+       ============================================================ -->
+  <div class="lgpd-banner" id="lgpd-banner" role="dialog" aria-labelledby="lgpd-titulo" aria-describedby="lgpd-desc" aria-live="polite" hidden>
+    <div class="lgpd-inner">
+      <div class="lgpd-texto">
+        <p id="lgpd-titulo"><strong>Privacidade e Cookies</strong></p>
+        <p id="lgpd-desc">Este site utiliza cookies essenciais para funcionamento e cookies analíticos para melhorar a experiência. Seus dados são tratados conforme nossa <a href="politica-privacidade.html" target="_blank" rel="noopener">Política de Privacidade (LGPD)</a>.</p>
+      </div>
+      <div class="lgpd-botoes">
+        <button class="btn-lgpd btn-lgpd-recusar" id="lgpd-recusar" type="button">Apenas essenciais</button>
+        <button class="btn-lgpd btn-lgpd-aceitar" id="lgpd-aceitar" type="button">Aceitar todos</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HEADER FIXO — Acessível e Premium
+       ============================================================ -->
+  <header class="header" id="header" role="banner">
+    <div class="container">
+
+      <a href="#" class="header-logo" aria-label="{{NOME}} Psicóloga Clínica — Início">
+        <span class="nome">{{NOME}}</span>
+        <span class="credencial">Psicóloga Clínica &bull; CRP {{CRP}}</span>
+      </a>
+
+      <nav class="header-nav" id="header-nav" role="navigation" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#para-quem">Especialidades</a>
+        <a href="#como-funciona">O Processo</a>
+        <a href="#abordagem">Abordagem</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#agendamento" class="btn btn-primario header-cta" aria-label="Agendar conversa inicial">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+          <span>Agendar conversa</span>
+        </a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="header-nav" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Overlay Mobile -->
+  <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       CONTEÚDO PRINCIPAL
+       ============================================================ -->
+  <main id="conteudo-principal" role="main">
+
+    <!-- ============================================================
+         SEÇÃO 1: Hero Premium
+         ============================================================ -->
+    <section class="hero" id="hero" aria-label="Apresentação inicial">
+      <div class="container">
+
+        <div class="hero-content animar">
+          <div class="hero-badge" aria-label="Modalidades de atendimento">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Atendimento presencial em {{CIDADE}} e online para todo o Brasil
+          </div>
+
+          <h1>Psicologia clínica baseada em evidências para o tratamento da <em>ansiedade e esgotamento</em>.</h1>
+
+          <p class="hero-subtitulo">
+            Acompanhamento terapêutico estruturado e individualizado para ajudar você a compreender seus padrões de comportamento, aliviar a sobrecarga emocional e recuperar o equilíbrio da sua vida, respeitando sua história e seu tempo.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#agendamento" class="btn btn-primario btn-lg" aria-label="Agendar conversa inicial via formulário de contato">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span>Agendar conversa inicial</span>
+            </a>
+            <a href="#sobre" class="btn btn-secundario btn-lg" aria-label="Conhecer a profissional e sua trajetória">
+              <span>Conhecer a profissional</span>
+            </a>
+          </div>
+
+          <div class="hero-apoio" role="list" aria-label="Credenciais principais">
+            <div class="apoio-item" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="apoio-icon" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>CRP Ativo {{CRP}}</span>
+            </div>
+            <div class="apoio-item" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="apoio-icon" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              <span>Resposta em até 24h</span>
+            </div>
+            <div class="apoio-item" role="listitem">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="apoio-icon" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>Sigilo garantido (CFP)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-imagem animar animar-delay-2">
+          <figure>
+            <img
+              src="assets/img/foto-perfil.jpg"
+              alt="Retrato da {{NOME}}, psicóloga clínica, em seu consultório — transmitindo acolhimento e profissionalismo"
+              loading="eager"
+              fetchpriority="high"
+              decoding="sync"
+              width="480"
+              height="600"
+            >
+            <figcaption class="sr-only">{{NOME}} — Psicóloga Clínica especialista em ansiedade e burnout</figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         TRUST BAR — Credenciais Rápidas
+         ============================================================ -->
+    <section class="trust-bar" aria-label="Indicadores de confiança e credenciais">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <span class="trust-numero">{{ANOS_EXPERIENCIA}}+</span>
+            <span class="trust-label">Anos de Prática Clínica</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-numero">{{HORAS_ATENDIMENTO}}</span>
+            <span class="trust-label">Horas de Atendimento</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-numero">USP</span>
+            <span class="trust-label">Formação Acadêmica</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-numero">TCC</span>
+            <span class="trust-label">Especialização HC-FMUSP</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-numero">100%</span>
+            <span class="trust-label">Sigilo Profissional</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 2: Sobre a Profissional
+         ============================================================ -->
+    <section class="sobre" id="sobre" aria-label="Sobre a {{NOME}}">
+      <div class="container">
+
+        <div class="sobre-grid">
+
+          <div class="sobre-imagem animar">
+            <div class="sobre-foto-wrap">
+              <img
+                src="assets/img/foto-perfil.jpg"
+                alt="{{NOME}} em ambiente de consultório, transmitindo profissionalismo e acolhimento"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="580"
+              >
+            </div>
+            <div class="sobre-credenciais">
+              <div class="credencial-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>Graduação — Universidade de {{CIDADE}} (USP)</span>
+              </div>
+              <div class="credencial-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Especialização TCC — {{INSTITUTO}}</span>
+              </div>
+              <div class="credencial-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>CRP {{CRP}} — Registro Ativo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobre-texto animar animar-delay-2">
+            <span class="sobre-tag">Trajetória Profissional</span>
+            <h2>Uma psicóloga que acredita na ciência <em>e</em> no acolhimento humano</h2>
+            <p>
+              Ao longo de mais de {{ANOS_EXPERIENCIA}} anos de prática clínica, acompanhei centenas de pessoas que chegaram até mim carregando o peso da ansiedade, do esgotamento e de uma autocrítica que não deixa espaço para respirar. Cada história me lembra por que escolhi esta profissão.
+            </p>
+            <p>
+              Graduada em Psicologia pela USP e especializada em Terapia Cognitivo-Comportamental pelo Instituto de Psiquiatria do HC-FMUSP, combino rigor acadêmico com uma escuta genuinamente empática. Para mim, ciência e cuidado não se opõem — se complementam.
+            </p>
+            <p>
+              Meu consultório é um espaço seguro, sem julgamentos, onde você pode ser quem você é. Seja presencialmente em {{CIDADE_ENDERECO}} ou online de qualquer lugar do Brasil, estou aqui para caminhar com você neste processo.
+            </p>
+
+            <div class="sobre-valores">
+              <div class="valor-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Ética e sigilo profissional absolutos</span>
+              </div>
+              <div class="valor-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Abordagem baseada em evidências científicas</span>
+              </div>
+              <div class="valor-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Atendimento online e presencial regulamentados pelo CFP</span>
+              </div>
+            </div>
+
+            <a href="#agendamento" class="btn btn-primario" aria-label="Agendar conversa inicial com a {{NOME}}">
+              <span>Agendar conversa inicial</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 3: Para Quem é a Terapia
+         ============================================================ -->
+    <section class="para-quem" id="para-quem" aria-label="Áreas de atuação e especialidades clínicas">
+      <div class="container">
+
+        <div class="secao-titulo animar">
+          <span class="sobre-tag">Especialidades Clínicas</span>
+          <h2>Dificuldades que podemos trabalhar juntos</h2>
+          <p>Se você se percebe vivenciando alguma destas situações, a terapia oferece um espaço estruturado para alívio e desenvolvimento de novas estratégias de enfrentamento.</p>
+        </div>
+
+        <div class="cards-grid" role="list" aria-label="Lista de especialidades clínicas">
+
+          <div class="card animar animar-delay-1" role="listitem">
+            <div class="card-icone" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 15.6A1.5 1.5 0 1 0 18 13H2"/><path d="M9.8 10.6A1.4 1.4 0 1 1 11 8H2"/></svg>
+            </div>
+            <h3>Ansiedade e Inquietude</h3>
+            <p>Pensamentos intrusivos que não cessam, preocupação contínua sobre o futuro, tensão muscular e batimentos acelerados sem causa física identificada.</p>
+          </div>
+
+          <div class="card animar animar-delay-2" role="listitem">
+            <div class="card-icone" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10"/><path d="m5 22 14-4"/><path d="m19 22-14-4"/><path d="M16.5 16A4.5 4.5 0 0 0 12 11.5 4.5 4.5 0 0 0 7.5 16a4.5 4.5 0 0 0 9 0Z"/></svg>
+            </div>
+            <h3>Burnout e Esgotamento</h3>
+            <p>Cansaço crônico relacionado ao trabalho, despersonalização, sensação de ineficácia e falta absoluta de energia para atividades que antes traziam prazer.</p>
+          </div>
+
+          <div class="card animar animar-delay-3" role="listitem">
+            <div class="card-icone" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+            </div>
+            <h3>Baixa Autoestima e Autocrítica</h3>
+            <p>Dificuldade em reconhecer suas qualidades, autoexigência paralisante, vergonha de expor opiniões e medo constante de rejeição ou erro.</p>
+          </div>
+
+          <div class="card animar animar-delay-1" role="listitem">
+            <div class="card-icone" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 19a6 6 0 0 0-12 0"/><circle cx="8" cy="9" r="4"/><path d="M22 19a6 6 0 0 0-6-6 4 4 0 1 0 0-8"/></svg>
+            </div>
+            <h3>Dificuldades de Relacionamento</h3>
+            <p>Conflitos afetivos recorrentes, padrões destrutivos que se repetem, inabilidade de impor limites saudáveis e expressar necessidades.</p>
+          </div>
+
+          <div class="card animar animar-delay-2" role="listitem">
+            <div class="card-icone" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="2" x2="22" y1="2" y2="22"/><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.2-1.2-2.3-1.7-3.7-1.9"/><path d="M12 13c-1.94 1.9-4 3.79-6 5.75L2 14c.73-.72 1.4-1.46 2.03-2.19"/></svg>
+            </div>
+            <h3>Processos de Luto e Perdas</h3>
+            <p>Elaboração saudável do sofrimento gerado pela perda de um ente querido, término de relacionamento ou mudanças drásticas de vida.</p>
+          </div>
+
+          <div class="card animar animar-delay-3" role="listitem">
+            <div class="card-icone" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+            </div>
+            <h3>Crises Emocionais e Desânimo</h3>
+            <p>Sentimento persistente de vazio, perda do interesse por atividades cotidianas, oscilações severas de humor e incertezas sobre o futuro.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 4: Como Funciona — Timeline
+         ============================================================ -->
+    <section class="como-funciona" id="como-funciona" aria-label="Etapas da jornada terapêutica">
+      <div class="container">
+
+        <div class="secao-titulo animar">
+          <span class="sobre-tag">Como Funciona a Jornada</span>
+          <h2>A jornada terapêutica passo a passo</h2>
+          <p>O tratamento psicológico clínico é um processo colaborativo, transparente e com começo, meio e fim planejados de forma conjunta.</p>
+        </div>
+
+        <div class="timeline" role="list" aria-label="Etapas do processo terapêutico">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <div class="timeline-item animar" role="listitem">
+            <div class="timeline-badge" aria-label="Etapa 1">1</div>
+            <div class="timeline-content">
+              <h3>Primeiro Contato</h3>
+              <p>Envio simples e sem compromisso de mensagem via WhatsApp ou formulário. Conversamos rapidamente para agendar o melhor dia e horário para seu atendimento inicial.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item animar animar-delay-1" role="listitem">
+            <div class="timeline-badge" aria-label="Etapa 2">2</div>
+            <div class="timeline-content">
+              <h3>Sessão Inicial</h3>
+              <p>Uma primeira consulta focada em entender seu sofrimento ou queixa, estabelecer uma atmosfera de escuta empática e verificar o alinhamento de expectativas.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item animar animar-delay-2" role="listitem">
+            <div class="timeline-badge" aria-label="Etapa 3">3</div>
+            <div class="timeline-content">
+              <h3>Plano Terapêutico</h3>
+              <p>Construção conjunta de metas terapêuticas realistas, alinhando a frequência ideal de encontros e identificando os principais temas a serem trabalhados.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item animar animar-delay-3" role="listitem">
+            <div class="timeline-badge" aria-label="Etapa 4">4</div>
+            <div class="timeline-content">
+              <h3>Acompanhamento Regular</h3>
+              <p>Sessões estruturadas semanais de 50 minutos. Aplicamos reflexões e técnicas cognitivas focadas no alívio de sintomas e modificação de padrões rígidos.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item animar animar-delay-4" role="listitem">
+            <div class="timeline-badge" aria-label="Etapa 5">5</div>
+            <div class="timeline-content">
+              <h3>Evolução &amp; Autonomia</h3>
+              <p>Avaliações periódicas de progresso clínico para garantir que você esteja desenvolvendo resiliência interna para lidar com as demandas de forma autônoma.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 5: Abordagem Terapêutica
+         ============================================================ -->
+    <section class="abordagem" id="abordagem" aria-label="Abordagem da Terapia Cognitivo-Comportamental">
+      <div class="container">
+
+        <div class="abordagem-grid">
+
+          <div class="abordagem-texto animar">
+            <span class="sobre-tag">Linha Teórica Base</span>
+            <h2>Abordagem focada em resultados práticos no presente</h2>
+            <span class="abordagem-subtitulo">Terapia Cognitivo-Comportamental (TCC)</span>
+
+            <p>
+              A Terapia Cognitivo-Comportamental é amplamente reconhecida pela comunidade médica por sua base em evidências e por apresentar resultados sólidos a curto e médio prazo. A premissa central é que a forma como interpretamos os acontecimentos afeta diretamente nossas emoções e comportamentos.
+            </p>
+            <p>
+              Trabalhamos de forma ativa e colaborativa: você traz suas vivências atuais e eu trago a fundamentação científica técnica para investigarmos e reestruturarmos crenças desadaptativas.
+            </p>
+            <p>
+              A TCC não busca apenas entender o passado, mas capacitar você a se tornar seu próprio terapeuta por meio de ferramentas de automonitoramento de sentimentos e ações.
+            </p>
+
+            <ul class="abordagem-lista" aria-label="Benefícios da Terapia Cognitivo-Comportamental">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Foco no presente e na resolução de conflitos reais
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Flexível e orientada pela formulação clínica de cada caso
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Estudos que comprovam eficácia clínica robusta para ansiedade e depressão
+              </li>
+            </ul>
+          </div>
+
+          <div class="abordagem-visual animar animar-delay-2">
+            <div class="quote-icone" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            </div>
+            <blockquote>
+              "Não são as coisas em si que nos perturbam, mas sim a opinião que temos sobre elas."
+            </blockquote>
+            <cite>— Epicteto (Princípio estoico pilar da TCC)</cite>
+            <div class="abordagem-tag-cientifica">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>Abordagem validada por evidências científicas internacionais</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 6: Diferenciais / Princípios Éticos
+         ============================================================ -->
+    <section class="diferenciais" id="diferenciais" aria-label="Princípios éticos e diferenciais da profissional">
+      <div class="container">
+
+        <div class="secao-titulo animar">
+          <span class="sobre-tag">Princípios Clínicos</span>
+          <h2>Nosso compromisso ético durante o atendimento</h2>
+          <p>Longe de técnicas de vendas ou apelos mercadológicos, estes são os valores humanos e técnicos que sustentam a integridade de todas as consultas.</p>
+        </div>
+
+        <div class="diferenciais-grid">
+
+          <div class="diferencial-card animar animar-delay-1">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+            </div>
+            <h3>Escuta Altamente Qualificada</h3>
+            <p>Acolhimento empático livre de juízos de valor ou opiniões pessoais. Suas dores são ouvidas de forma técnica e validada.</p>
+          </div>
+
+          <div class="diferencial-card animar animar-delay-2">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Sigilo Profissional Absoluto</h3>
+            <p>Garantia integral de confidencialidade de todos os dados clínicos e diálogos, em conformidade estrita com o Código de Ética do CFP (Art. 9º).</p>
+          </div>
+
+          <div class="diferencial-card animar animar-delay-3">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0h-4M5 7H3m18 0h-2"/></svg>
+            </div>
+            <h3>Cientificidade Rigorosa</h3>
+            <p>Nenhuma prática baseada em esoterismo ou crenças individuais. As estratégias aplicadas possuem eficácia mensurada na literatura científica.</p>
+          </div>
+
+          <div class="diferencial-card animar animar-delay-4">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Respeito à Singularidade</h3>
+            <p>A terapia é personalizada para suas vivências e identidade, respeitando seu ritmo de mudança de forma gradual e atenciosa.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 7: Depoimentos Éticos
+         ============================================================ -->
+    <section class="depoimentos" id="depoimentos" aria-label="Relatos anônimos de pacientes com autorização">
+      <div class="container">
+
+        <div class="secao-titulo animar">
+          <span class="sobre-tag">Relatos de Pacientes</span>
+          <h2>A experiência de quem já passou pelo processo</h2>
+          <p>Relatos compartilhados com autorização explícita e preservação estrita da identidade, conforme Código de Ética do CFP.</p>
+        </div>
+
+        <div class="depoimentos-grid">
+
+          <article class="depoimento-card animar animar-delay-1">
+            <div class="depoimento-estrelas" aria-label="5 de 5 estrelas">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="depoimento-aspas" aria-hidden="true">"</span>
+            <p>O acolhimento da {{NOME}} foi crucial. Tinha receio de que ela não entendesse meu ritmo no ambiente online, mas a segurança técnica me fez construir estratégias reais para lidar com o estresse laboral diário.</p>
+            <div class="depoimento-autor">
+              <div class="depoimento-avatar" aria-hidden="true">A.G.</div>
+              <div class="depoimento-info">
+                <span class="nome-depoimento">A. G.</span>
+                <span class="tempo-depoimento">Em acompanhamento há 10 meses</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="depoimento-card animar animar-delay-2">
+            <div class="depoimento-estrelas" aria-label="5 de 5 estrelas">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="depoimento-aspas" aria-hidden="true">"</span>
+            <p>A abordagem prática da TCC me ajudou a sair da inércia. Aprender a compreender minha ansiedade e reavaliar meus pensamentos automáticos mudou completamente meu humor e meu autocuidado.</p>
+            <div class="depoimento-autor">
+              <div class="depoimento-avatar" aria-hidden="true">F.M.</div>
+              <div class="depoimento-info">
+                <span class="nome-depoimento">F. M.</span>
+                <span class="tempo-depoimento">Paciente pós-alta clínica</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="depoimento-card animar animar-delay-3">
+            <div class="depoimento-estrelas" aria-label="5 de 5 estrelas">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="depoimento-aspas" aria-hidden="true">"</span>
+            <p>Desde a sessão inicial percebi que seria um acompanhamento sério, técnico e focado no que eu precisava. O ambiente do consultório é muito seguro e a profissional me deu clareza sobre meus limites e potenciais.</p>
+            <div class="depoimento-autor">
+              <div class="depoimento-avatar" aria-hidden="true">L.R.</div>
+              <div class="depoimento-info">
+                <span class="nome-depoimento">L. R.</span>
+                <span class="tempo-depoimento">Em acompanhamento há 6 meses</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 8: FAQ — Accordion Acessível
+         ============================================================ -->
+    <section class="faq" id="faq" aria-label="Perguntas frequentes sobre psicoterapia e o processo clínico">
+      <div class="container">
+
+        <div class="secao-titulo animar">
+          <span class="sobre-tag">Suas Dúvidas Respondidas</span>
+          <h2>Esclarecimentos sobre o funcionamento da clínica</h2>
+          <p>Para sua segurança, explicamos de forma transparente todas as dinâmicas operacionais dos atendimentos psicológicos.</p>
+        </div>
+
+        <div class="faq-lista" role="list">
+
+          <div class="faq-item animar animar-delay-1" role="listitem">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-ans-1" id="faq-btn-1">
+              <span class="faq-pergunta-texto">Como funciona a primeira sessão? O que esperar?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icone" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-resposta" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1">
+              <div class="faq-resposta-inner">
+                <p>A primeira consulta é uma entrevista clínica estruturada para acolher sua queixa imediata e avaliar seu contexto geral. Não há cobrança de promessas de tratamento e serve como um espaço para conhecermos um ao outro e avaliarmos o encaixe mútuo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animar animar-delay-1" role="listitem">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-ans-2" id="faq-btn-2">
+              <span class="faq-pergunta-texto">Qual a duração média e frequência das consultas?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icone" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-resposta" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2">
+              <div class="faq-resposta-inner">
+                <p>Cada consulta dura exatamente 50 minutos. A frequência recomendada é semanal para garantir o ritmo das atividades, discussões cognitivas e consolidação de novos hábitos comportamentais.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animar animar-delay-2" role="listitem">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-ans-3" id="faq-btn-3">
+              <span class="faq-pergunta-texto">Como funcionam os pagamentos e reembolsos?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icone" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-resposta" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3">
+              <div class="faq-resposta-inner">
+                <p>O formato é estritamente particular, por PIX ou depósito em conta. Emitimos relatórios detalhados com a chancela do CRP para solicitação de reembolso via livre escolha nos planos de saúde regulados pela ANS.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animar animar-delay-2" role="listitem">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-ans-4" id="faq-btn-4">
+              <span class="faq-pergunta-texto">Atende a algum convênio médico diretamente?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icone" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-resposta" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4">
+              <div class="faq-resposta-inner">
+                <p>Não há convênio direto, visando garantir o tempo de dedicação necessário para o preparo de cada caso clínico de forma justa. Fornecemos todo o auxílio burocrático e documentação para seu processo pessoal de reembolso com o plano.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animar animar-delay-3" role="listitem">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-ans-5" id="faq-btn-5">
+              <span class="faq-pergunta-texto">O atendimento online realmente funciona?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icone" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-resposta" id="faq-ans-5" role="region" aria-labelledby="faq-btn-5">
+              <div class="faq-resposta-inner">
+                <p>Sim. Os atendimentos por videochamada criptografada são idênticos em eficácia clínica às consultas presenciais, comprovados por diversas pesquisas científicas internacionais. É necessário apenas um dispositivo com internet estável e um espaço privativo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animar animar-delay-3" role="listitem">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-ans-6" id="faq-btn-6">
+              <span class="faq-pergunta-texto">Como funciona a política de sigilo profissional?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icone" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-resposta" id="faq-ans-6" role="region" aria-labelledby="faq-btn-6">
+              <div class="faq-resposta-inner">
+                <p>O sigilo é protegido integralmente pelo Código de Ética Profissional do Psicólogo (artigo 9º). Seus relatos, notas clínicas e arquivos do prontuário digital são criptografados de ponta a ponta e nunca expostos a terceiros.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animar animar-delay-4" role="listitem">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-ans-7" id="faq-btn-7">
+              <span class="faq-pergunta-texto">Posso reagendar ou cancelar sessões se precisar?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icone" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-resposta" id="faq-ans-7" role="region" aria-labelledby="faq-btn-7">
+              <div class="faq-resposta-inner">
+                <p>Sim. Solicitamos a notificação prévia com no mínimo 24 horas de antecedência para realocação da sala e do horário. Desmarcações repentinas fora deste prazo estão sujeitas à taxa regular da sessão.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item animar animar-delay-4" role="listitem">
+            <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-ans-8" id="faq-btn-8">
+              <span class="faq-pergunta-texto">Por que trabalhar com a Terapia Cognitivo-Comportamental?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icone" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-resposta" id="faq-ans-8" role="region" aria-labelledby="faq-btn-8">
+              <div class="faq-resposta-inner">
+                <p>Por ser uma abordagem estruturada, colaborativa e de curto prazo, focada em restabelecer a estabilidade psíquica. O paciente aprende a mapear pensamentos irracionais em tempo real e alterar suas atitudes cotidianas de forma autônoma.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SEÇÃO 9: Agendamento — CTA Premium
+         ============================================================ -->
+    <section class="agendamento" id="agendamento" aria-label="Agende sua consulta inicial">
+      <div class="container">
+
+        <div class="agendamento-flex">
+
+          <div class="agendamento-textos animar">
+            <span class="sobre-tag invertida">Espaço Acolhedor</span>
+            <h2>Se você sente que este pode ser um bom momento para iniciar seu processo, será um prazer conversar com você.</h2>
+            <p>Iniciar a psicoterapia não exige que você saiba exatamente o que falar. Estarei preparada para acolher suas dúvidas e construir o plano clínico de forma totalmente conjunta.</p>
+
+            <div class="agendamento-trust">
+              <div class="trust-sinal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Resposta em até 24 horas</span>
+              </div>
+              <div class="trust-sinal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>Sigilo profissional garantido</span>
+              </div>
+              <div class="trust-sinal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>CRP {{CRP}} ativo e verificável</span>
+              </div>
+              <div class="trust-sinal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                <span>Atendimento online para todo o Brasil</span>
+              </div>
+            </div>
+
+            <div class="agendamento-opcoes">
+              <a href="https://wa.me/{{WHATSAPP}}?text=Olá!%20Gostaria%20de%20agendar%20uma%20conversa%20inicial%20com%20a%20Dra.%20a profissional." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp — abre em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.993L2 22l5.233-1.371a9.944 9.944 0 0 0 4.773 1.226h.004c5.505 0 9.99-4.478 9.99-9.985A9.988 9.988 0 0 0 12.012 2zm5.836 14.199c-.32.899-1.854 1.647-2.529 1.742-.618.086-1.428.163-4.225-.992-3.578-1.477-5.885-5.111-6.064-5.35-.178-.238-1.445-1.921-1.445-3.666 0-1.745.908-2.604 1.233-2.96.325-.356.711-.444.948-.444.237 0 .474.001.681.011.217.01.503-.039.789.631.306.721 1.047 2.549 1.139 2.738.093.189.155.408.028.658-.124.25-.187.408-.372.624-.187.217-.393.486-.563.652-.187.183-.383.383-.165.759.217.373.968 1.597 2.073 2.583 1.419 1.264 2.616 1.656 2.988 1.834.372.179.589.15.805-.099.217-.25.928-1.079 1.176-1.449.25-.371.495-.308.835-.183.342.126 2.167 1.021 2.54 1.206.372.185.619.277.712.435.093.159.093.921-.227 1.82z"/></svg>
+                <span>Agendar pelo WhatsApp</span>
+              </a>
+              <span class="agendamento-separador">ou preencha o formulário ao lado</span>
+            </div>
+          </div>
+
+          <!-- Formulário de Contato Premium -->
+          <div class="agendamento-formulario animar animar-delay-2">
+            <form class="form-agendamento" id="form-contato" novalidate autocomplete="on">
+              <h3>Envie sua mensagem</h3>
+
+              <!-- Região de feedback acessível -->
+              <div class="form-feedback" id="form-feedback" role="alert" aria-live="assertive" aria-atomic="true" hidden></div>
+
+              <div class="form-grupo">
+                <label for="form-nome">Nome completo <span class="form-obrigatorio" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="form-nome"
+                  name="nome"
+                  placeholder="Seu nome completo"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="form-nome-erro"
+                  minlength="3"
+                  maxlength="100"
+                >
+                <span class="form-erro" id="form-nome-erro" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-grupo">
+                <label for="form-email">E-mail <span class="form-obrigatorio" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="form-email"
+                  name="email"
+                  placeholder="seu@email.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="form-email-erro"
+                  maxlength="150"
+                >
+                <span class="form-erro" id="form-email-erro" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-grupo">
+                <label for="form-telefone">Telefone <span class="form-obrigatorio" aria-hidden="true">*</span></label>
+                <input
+                  type="tel"
+                  id="form-telefone"
+                  name="telefone"
+                  placeholder="(00) 00000-0000"
+                  required
+                  autocomplete="tel"
+                  aria-required="true"
+                  aria-describedby="form-telefone-erro"
+                  inputmode="numeric"
+                >
+                <span class="form-erro" id="form-telefone-erro" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-grupo">
+                <label for="form-modalidade">Modalidade de preferência <span class="form-obrigatorio" aria-hidden="true">*</span></label>
+                <select id="form-modalidade" name="modalidade" required aria-required="true" aria-describedby="form-modalidade-erro">
+                  <option value="" disabled selected>Selecione uma modalidade</option>
+                  <option value="presencial">Presencial — {{CIDADE_ENDERECO}}</option>
+                  <option value="online">Online — Videochamada criptografada</option>
+                  <option value="sem-preferencia">Sem preferência inicial</option>
+                </select>
+                <span class="form-erro" id="form-modalidade-erro" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-grupo">
+                <label for="form-mensagem">Mensagem (opcional)</label>
+                <textarea
+                  id="form-mensagem"
+                  name="mensagem"
+                  placeholder="Se desejar, conte brevemente o que te trouxe aqui (opcional)"
+                  rows="3"
+                  maxlength="1000"
+                ></textarea>
+              </div>
+
+              <div class="form-grupo form-grupo-check">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    id="form-lgpd"
+                    name="lgpd"
+                    required
+                    aria-required="true"
+                    aria-describedby="form-lgpd-erro"
+                  >
+                  <span>Li e concordo com a <a href="politica-privacidade.html" target="_blank" rel="noopener" class="form-link-lgpd">Política de Privacidade</a> e autorizo o contato para agendamento.</span>
+                </label>
+                <span class="form-erro" id="form-lgpd-erro" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primario btn-submit" id="btn-submit" aria-label="Enviar formulário de agendamento">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="btn-icone-enviar"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span class="btn-texto">Enviar mensagem</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER COMPLETO
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-conteudo">
+
+        <div class="footer-logo">
+          <span class="nome">{{NOME}}</span>
+          <span class="credencial">Psicóloga Clínica &bull; CRP {{CRP}}</span>
+          <p>Prática psicológica clínica ética pautada nas normas vigentes do Conselho Federal de Psicologia e na Terapia Cognitivo-Comportamental baseada em evidências.</p>
+          <div class="footer-redes" aria-label="Redes sociais">
+            <a href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer" aria-label="Instagram da {{NOME}} — abre em nova aba">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="{{LINKEDIN}}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn da {{NOME}} — abre em nova aba">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navegação</h4>
+          <nav aria-label="Links de navegação do rodapé">
+            <div class="footer-links">
+              <a href="#sobre">Sobre a Profissional</a>
+              <a href="#para-quem">Especialidades</a>
+              <a href="#como-funciona">Processo Clínico</a>
+              <a href="#abordagem">Abordagem TCC</a>
+              <a href="#depoimentos">Relatos</a>
+              <a href="#faq">Perguntas Frequentes</a>
+              <a href="#agendamento">Agendar Consulta</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="footer-contato">
+          <h4>Contato &amp; Localização</h4>
+          <address class="footer-address">
+            <a href="mailto:{{EMAIL}}" class="contato-link" aria-label="Enviar e-mail para {{EMAIL}}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              {{EMAIL}}
+            </a>
+            <a href="https://wa.me/{{WHATSAPP}}" class="contato-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp {{TELEFONE_FORMATADO}} — abre em nova aba">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.993L2 22l5.233-1.371a9.944 9.944 0 0 0 4.773 1.226h.004c5.505 0 9.99-4.478 9.99-9.985A9.988 9.988 0 0 0 12.012 2z"/></svg>
+              {{TELEFONE_FORMATADO}}
+            </a>
+            <span class="endereco">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              {{ENDERECO}}
+            </span>
+            <span class="horario">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              {{HORARIOS}}
+            </span>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 {{NOME}}. Todos os direitos reservados. Site demonstrativo de portfólio.</p>
+        <div class="footer-bottom-links">
+          <a href="politica-privacidade.html" aria-label="Ler a Política de Privacidade conforme LGPD">Política de Privacidade</a>
+          <span aria-hidden="true">·</span>
+          <a href="politica-privacidade.html#cookies" aria-label="Ler a Política de Cookies">Política de Cookies</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       CTA FLUTUANTE — WhatsApp (Mobile-First)
+       ============================================================ -->
+  <a
+    href="https://wa.me/{{WHATSAPP}}?text=Olá!%20Gostaria%20de%20agendar%20uma%20conversa%20inicial."
+    class="cta-flutuante"
+    id="cta-flutuante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar no WhatsApp com a {{NOME}} — abre em nova aba"
+    title="Agendar pelo WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.993L2 22l5.233-1.371a9.944 9.944 0 0 0 4.773 1.226h.004c5.505 0 9.99-4.478 9.99-9.985A9.988 9.988 0 0 0 12.012 2zm5.836 14.199c-.32.899-1.854 1.647-2.529 1.742-.618.086-1.428.163-4.225-.992-3.578-1.477-5.885-5.111-6.064-5.35-.178-.238-1.445-1.921-1.445-3.666 0-1.745.908-2.604 1.233-2.96.325-.356.711-.444.948-.444.237 0 .474.001.681.011.217.01.503-.039.789.631.306.721 1.047 2.549 1.139 2.738.093.189.155.408.028.658-.124.25-.187.408-.372.624-.187.217-.393.486-.563.652-.187.183-.383.383-.165.759.217.373.968 1.597 2.073 2.583 1.419 1.264 2.616 1.656 2.988 1.834.372.179.589.15.805-.099.217-.25.928-1.079 1.176-1.449.25-.371.495-.308.835-.183.342.126 2.167 1.021 2.54 1.206.372.185.619.277.712.435.093.159.093.921-.227 1.82z"/></svg>
+    <span class="cta-flutuante-texto">Agendar agora</span>
+  </a>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button
+    class="voltar-topo"
+    id="voltar-topo"
+    type="button"
+    aria-label="Voltar ao topo da página"
+    title="Voltar ao topo"
+    hidden
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JavaScript Principal -->
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>

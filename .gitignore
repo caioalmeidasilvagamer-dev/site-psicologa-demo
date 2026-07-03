@@ -5,3 +5,7 @@ node_modules/
 *.swp
 *.swo
 Thumbs.db
+# Generated folders and configs for specific clients
+saida-*/
+saida-teste/
+config-*.json

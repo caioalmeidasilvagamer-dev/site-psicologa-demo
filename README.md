@@ -1,29 +1,61 @@
-# Landing Page — Psicólogo(a) Clínico(a) | Template Demo
+# Landing Page — Psicólogo(a) Clínico(a) | Template & Gerador Dinâmico
 
-Template de landing page profissional para psicólogos clínicos. Projeto 100% estático (HTML + CSS + JS vanilla), pronto para hospedar em qualquer serviço (Netlify, GitHub Pages, hospedagem compartilhada).
+Este projeto é um template de landing page profissional premium para psicólogos clínicos. Ele possui um **gerador automático** escrito em Python que permite gerar o site personalizado de um novo cliente em segundos a partir de um arquivo de configuração JSON.
 
 ---
 
-## 🚀 Como rodar localmente
+## 🛠️ Como usar o Gerador de Site Automático
 
-Qualquer uma dessas opções funciona:
+Você pode gerar uma nova landing page customizada rodando o script `gerar_site.py`.
+
+### 1. Requisitos
+- Python 3.x instalado localmente (não requer dependências externas, utiliza apenas a biblioteca padrão).
+
+### 2. Passo a Passo
+1. Crie ou copie o arquivo de configuração para o novo cliente. Você pode usar o [config.exemplo.json](file:///c:/Users/walla/OneDrive/Documentos/SIte%20psic%C3%B3loga%20demo/config.exemplo.json) como base:
+   ```json
+   {
+     "NOME": "Dra. Marina Oliveira",
+     "CRP": "CRP 06/123456",
+     "WHATSAPP": "5511999999999",
+     "EMAIL": "contato@dramarinaoliveirapsi.com.br",
+     "TELEFONE_FORMATADO": "(11) 99999-9999",
+     "ENDERECO": "Av. Paulista, 1000 - Cj 52",
+     "HORARIOS": "Seg–Sex: 08h às 20h",
+     "CIDADE": "São Paulo",
+     "CIDADE_ENDERECO": "São Paulo (Av. Paulista)",
+     "UNIVERSIDADE": "Universidade de São Paulo (USP)",
+     "INSTITUTO": "Instituto de Psiquiatria HC-FMUSP",
+     "ANOS_EXPERIENCIA": "8"
+   }
+   ```
+2. Execute o script gerador passando o arquivo de configuração e a pasta de destino:
+   ```bash
+   python gerar_site.py config.exemplo.json saida-marina
+   ```
+3. O script criará a pasta `saida-marina` contendo o site completo com todos os dados substituídos, copiando automaticamente as pastas de CSS, JS, assets estáticos e o robots.txt.
+4. Substitua as fotos em `saida-marina/assets/img/foto-perfil.jpg` com a foto real da profissional.
+
+---
+
+## 🚀 Como rodar localmente (para desenvolvimento/visualização)
+
+Qualquer uma dessas opções funciona (dentro da pasta gerada, ex: `saida-marina/`):
 
 ```bash
-# Opção 1 — Node.js (recomendado)
+# Opção 1 — Node.js
 npx live-server
 
 # Opção 2 — Python
 python -m http.server 8000
 
 # Opção 3 — Abrir direto no navegador
-# Basta dar duplo clique no arquivo index.html
+# Basta dar duplo clique no arquivo index.html da pasta gerada
 ```
 
 ---
 
-## 🎨 Customização para novo cliente
-
-### 1. Cores e fontes (CSS Custom Properties)
+## 🎨 Customização de Estilos (CSS Custom Properties)
 
 Todas as cores e fontes estão centralizadas no topo do arquivo `css/style.css`, dentro do bloco `:root`:
 
@@ -40,74 +72,37 @@ Todas as cores e fontes estão centralizadas no topo do arquivo `css/style.css`,
 }
 ```
 
-Basta alterar os valores das variáveis para mudar toda a paleta do site de uma vez.
-
-### 2. Dados do profissional (HTML)
-
-No `index.html`, todos os pontos que precisam ser editados para cada cliente estão marcados com comentários no formato:
-
-```html
-<!-- EDITAR: nome do profissional -->
-<!-- EDITAR: CRP -->
-<!-- EDITAR: foto de perfil -->
-<!-- EDITAR: bio do profissional -->
-<!-- EDITAR: WhatsApp -->
-```
-
-Use **Ctrl+F** (busca) no seu editor de código e procure por `EDITAR:` para encontrar rapidamente todos os pontos de customização.
-
-### 3. Imagens
-
-| Imagem | Local | Tamanho recomendado |
-|---|---|---|
-| Foto de perfil | `assets/img/foto-perfil.jpg` | 600×600px, quadrada |
-| Favicon | `assets/img/favicon.png` | 32×32px |
-
-### 4. Checklist de customização rápida
-
-- [ ] Trocar nome do profissional
-- [ ] Trocar número do CRP
-- [ ] Trocar foto de perfil (`assets/img/foto-perfil.jpg`)
-- [ ] Ajustar bio/formação na seção "Sobre"
-- [ ] Ajustar paleta de cores no `css/style.css`
-- [ ] Atualizar número de WhatsApp nos CTAs
-- [ ] Atualizar links de redes sociais no rodapé
-- [ ] Atualizar textos de depoimentos
-- [ ] Substituir favicon
+Altere as variáveis no arquivo `css/style.css` para alterar a paleta de cores global do site.
 
 ---
 
-## 📁 Estrutura de arquivos
+## 📁 Estrutura de arquivos do Projeto
 
 ```
-├── index.html          ← Página principal (HTML semântico, comentado)
+├── index.template.html                 ← Template HTML com marcadores {{CAMPO}}
+├── politica-privacidade.template.html  ← Template de Política de Privacidade
+├── manifest.template.webmanifest       ← Template do Manifesto PWA
+├── sitemap.template.xml                ← Template de Sitemap XML
+├── config.exemplo.json                 ← Configuração JSON de exemplo com as 12 chaves
+├── gerar_site.py                       ← Script Python que compila o site final
 ├── css/
-│   └── style.css       ← Estilos (variáveis de cor no topo)
+│   └── style.css                       ← Estilos globais responsivos (Mobile-First)
 ├── js/
-│   └── script.js       ← Interações (menu, FAQ, scroll, animações)
+│   └── script.js                       ← JavaScript de interações da página
 ├── assets/
-│   ├── img/            ← Imagens (foto-perfil.jpg, favicon.png)
-│   └── icons/          ← Ícones SVG (se necessário)
-├── README.md           ← Este arquivo
+│   ├── img/                            ← Imagens estáticas (placeholders de fotos)
+│   └── icons/                          ← Ícones complementares
+├── README.md                           ← Este arquivo
+├── index.html                          ← Demo estática genérica atualizada
 └── .gitignore
 ```
 
 ---
 
-## 📋 Dependências externas (CDN)
-
-- [Google Fonts](https://fonts.google.com/) — Fraunces + Inter
-- [Lucide Icons](https://lucide.dev/) — Ícones SVG via CDN
-
-Nenhuma dependência de build, npm ou framework.
-
----
-
 ## ⚖️ Regras éticas (CFP)
 
-Este template segue as diretrizes éticas do Conselho Federal de Psicologia:
-- Sem promessas de cura ou resultado
-- Sem preços como gatilho de venda
-- Depoimentos anonimizados
-- CRP sempre visível
-- Tom sóbrio e profissional
+Este template segue estritamente as diretrizes éticas do Conselho Federal de Psicologia do Brasil (CFP):
+- Sem promessas de cura ou de resultados clínicos/prazos.
+- Sem apelos mercadológicos ou de preços (descontos, pacotes).
+- Depoimentos anonimizados.
+- CRP sempre visível e linkado ao início/rodapé.
