@@ -82,31 +82,6 @@
       max-width: 200px;
     }
 
-    /* Banner de demonstração fixo no topo */
-    .demo-banner {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 9999;
-      background: linear-gradient(90deg, hsl(35,90%,52%), hsl(25,90%,48%));
-      color: #fff;
-      padding: 8px 16px;
-      text-align: center;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-    }
-
-    /* Empurrar o header abaixo do banner demo */
-    body.has-demo-banner .header {
-      top: 36px;
-    }
-
-    body.has-demo-banner .hero {
-      padding-top: calc(var(--header-h, 64px) + 60px);
-    }
 
     /* Highlights de campos personalizáveis */
     .personalizavel {
@@ -121,14 +96,8 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
-<body class="has-demo-banner">
+<body>
 
-  <!-- ============================================================
-       BANNER DE DEMONSTRAÇÃO — Visível apenas na versão demo
-       ============================================================ -->
-  <div class="demo-banner" role="banner" aria-label="Aviso de demonstração">
-    🎨 Versão demonstrativa — Todos os dados serão personalizados com as informações da profissional
-  </div>
 
   <!-- Pular para conteúdo principal (Acessibilidade WCAG 2.2) -->
   <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
