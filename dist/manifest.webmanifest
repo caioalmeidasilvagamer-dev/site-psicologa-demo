@@ -1,0 +1,21 @@
+{
+  "name": "Dra. Marina Oliveira — Psicóloga Clínica",
+  "short_name": "Dra. Marina Oliveira",
+  "description": "Psicoterapia individual baseada em evidências. Atendimento presencial em São Paulo e online para todo o Brasil.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#607466",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "orientation": "portrait-primary",
+  "categories": ["health", "medical"],
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

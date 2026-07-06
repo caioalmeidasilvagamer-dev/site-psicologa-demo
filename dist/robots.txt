@@ -1,0 +1,11 @@
+# Robots.txt — Dra. Marina Oliveira Psicóloga Clínica
+# https://dramarinaoliveirapsi.com.br/
+
+User-agent: *
+Allow: /
+
+# Bloquear arquivos desnecessários para crawlers
+Disallow: /assets/img/foto-perfil.jpg
+
+# Referência ao Sitemap
+Sitemap: https://dramarinaoliveirapsi.com.br/sitemap.xml
